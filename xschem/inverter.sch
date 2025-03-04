@@ -44,7 +44,7 @@ lab=VDD}
 N 530 220 530 280 {
 lab=VSS}
 N 530 90 530 160 {
-lab=xxx}
+lab=OUT}
 N 530 60 620 60 {
 lab=VDD}
 N 620 20 620 60 {
@@ -58,7 +58,7 @@ lab=VSS}
 N 530 230 610 230 {
 lab=VSS}
 N 530 120 620 120 {
-lab=xxx}
+lab=OUT}
 C {devices/iopin.sym} 80 -250 0 0 {name=p1 lab=VDD}
 C {devices/iopin.sym} 80 -180 0 0 {name=p2 lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 230 190 0 0 {name=M1
@@ -94,7 +94,7 @@ C {devices/lab_wire.sym} 250 280 0 0 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 100 120 0 0 {name=p5 lab=in}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 510 190 0 0 {name=M3
 L=0.15
-W=4
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -108,7 +108,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 510 60 0 0 {name=M4
 L=0.35
-W=8
+W=16
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
